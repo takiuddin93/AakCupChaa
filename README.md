@@ -2,7 +2,17 @@
 
 A new Flutter project.
 
-### Getting Started
+### Description
+
+Lets see where this goes as I progress.
+
+### Get Started
+
+* Clone this repo
+* Run `flutter packages get`
+* Run `flutter run` (remember open simulator or connect physical device, iOS auto run additional command `pod install`)
+
+### For Beginners
 
 This project is a starting point for a Flutter application.
 

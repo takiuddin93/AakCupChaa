@@ -24,27 +24,95 @@ flutter:
 
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
     - assets/svgs/
 
-  # To add custom fonts to your application, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+    - family: FuturaPTBold
+      fonts:
+        - asset: assets/fonts/FuturaPTBold.otf
+
+    - family: FuturaPTBoldOblique
+      fonts:
+        - asset: assets/fonts/FuturaPTBoldOblique.otf
+
+    - family: FuturaPTBook
+      fonts:
+        - asset: assets/fonts/FuturaPTBook.otf
+
+    - family: FuturaPTBookOblique
+      fonts:
+        - asset: assets/fonts/FuturaPTBookOblique.otf
+
+    - family: FuturaPTCondBold
+      fonts:
+        - asset: assets/fonts/FuturaPTCondBold.otf
+
+    - family: FuturaPTCondBoldOblique
+      fonts:
+        - asset: assets/fonts/FuturaPTCondBoldOblique.otf
+
+    - family: FuturaPTCondBook
+      fonts:
+        - asset: assets/fonts/FuturaPTCondBook.otf
+
+    - family: FuturaPTCondBookOblique
+      fonts:
+        - asset: assets/fonts/FuturaPTCondBookOblique.otf
+
+    - family: FuturaPTCondExtraBold
+      fonts:
+        - asset: assets/fonts/FuturaPTCondExtraBold.otf
+
+    - family: FuturaPTCondExtraBoldOblique
+      fonts:
+        - asset: assets/fonts/FuturaPTCondExtraBoldOblique.otf
+
+    - family: FuturaPTCondMedium
+      fonts:
+        - asset: assets/fonts/FuturaPTCondMedium.otf
+
+    - family: FuturaPTCondMediumOblique
+      fonts:
+        - asset: assets/fonts/FuturaPTCondMediumOblique.otf
+
+    - family: FuturaPTDemi
+      fonts:
+        - asset: assets/fonts/FuturaPTDemi.otf
+
+    - family: FuturaPTDemiOblique
+      fonts:
+        - asset: assets/fonts/FuturaPTDemiOblique.otf
+
+    - family: FuturaPTExtraBold
+      fonts:
+        - asset: assets/fonts/FuturaPTExtraBold.otf
+
+    - family: FuturaPTExtraBoldOblique
+      fonts:
+        - asset: assets/fonts/FuturaPTExtraBoldOblique.otf
+
+    - family: FuturaPTHeavy
+      fonts:
+        - asset: assets/fonts/FuturaPTHeavy.otf
+
+    - family: FuturaPTHeavyOblique
+      fonts:
+        - asset: assets/fonts/FuturaPTHeavyOblique.otf
+
+    - family: FuturaPTLight
+      fonts:
+        - asset: assets/fonts/FuturaPTLight.otf
+
+    - family: FuturaPTLightOblique
+      fonts:
+        - asset: assets/fonts/FuturaPTLightOblique.otf
+
+    - family: FuturaPTMedium
+      fonts:
+        - asset: assets/fonts/FuturaPTMedium.otf
+
+    - family: FuturaPTMediumOblique
+      fonts:
+        - asset: assets/fonts/FuturaPTMediumOblique.otf

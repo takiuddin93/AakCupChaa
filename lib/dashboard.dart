@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:aakcupchaa/universal_variables.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:share/share.dart';
 import 'package:aakcupchaa/menu.dart';
 import 'package:aakcupchaa/stats.dart';
 import 'package:aakcupchaa/settings.dart';
@@ -73,7 +74,7 @@ class _DashBoardState extends State<DashBoard>
             child: Column(
               children: <Widget>[
                 Expanded(
-                    flex: 2,
+                    flex: 3,
                     child: Column(
                       children: <Widget>[
                         Padding(
@@ -112,14 +113,24 @@ class _DashBoardState extends State<DashBoard>
                             ),
                           ]),
                         ),
-                        SvgPicture.asset(
-                          'assets/svgs/Share.svg',
-                          width: width * 0.04,
+                        GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              Share.share(
+                                  'https://www.buymeacoffee.com/takiuddin93');
+                            });
+                          },
+                          child: Container(
+                            width: width * 0.16,
+                            child: SvgPicture.asset(
+                              'assets/svgs/Share.svg',
+                            ),
+                          ),
                         ),
                       ],
                     )),
                 Expanded(
-                  flex: 5,
+                  flex: 4,
                   child: Container(),
                 ),
                 Expanded(

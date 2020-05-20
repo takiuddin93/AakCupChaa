@@ -1,0 +1,36 @@
+{
+  "posts": [{
+      "pID": "0001",
+      "photoThumbnail": "assets/images/postsThumbnails.jpg",
+      "videoThumbnail": null,
+      "timeStamp": "May 21, 2020 at 7:35:00 PM UTC+6",
+      "pTitle": "Post",
+      "pContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "pAuthor": "Author",
+      "pLikes": "8",
+      "pFavorites": "16"
+    },
+    {
+      "pID": "0002",
+      "photoThumbnail": "assets/images/postsThumbnails.jpg",
+      "videoThumbnail": null,
+      "timeStamp": "May 21, 2020 at 7:40:30 PM UTC+6",
+      "pTitle": "New Post",
+      "pContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "pAuthor": "Author",
+      "pLikes": "4",
+      "pFavorites": "8"
+    },
+    {
+      "pID": "0003",
+      "photoThumbnail": "assets/images/postsThumbnails.jpg",
+      "videoThumbnail": null,
+      "timeStamp": "May 21, 2020 at 7:40:40 PM UTC+6",
+      "pTitle": "New Post",
+      "pContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "pAuthor": "Author",
+      "pLikes": "4",
+      "pFavorites": "8"
+    }
+  ]
+}

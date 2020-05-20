@@ -109,7 +109,7 @@ class _DashBoardState extends State<DashBoard>
                               style: TextStyle(
                                   color: UniversalVariables.primaryCrimson,
                                   fontSize: 18.0,
-                                  fontFamily: 'FuturaPTBook'),
+                                  fontFamily: 'FuturaPTMedium'),
                             ),
                           ]),
                         ),

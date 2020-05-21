@@ -1,4 +1,5 @@
 {
+  "noofposts": "3",
   "posts": [{
       "pID": "0001",
       "photoThumbnail": "assets/images/postsThumbnails.jpg",
@@ -6,7 +7,7 @@
       "timeStamp": "May 21, 2020 at 7:35:00 PM UTC+6",
       "pTitle": "Post",
       "pContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "pAuthor": "Author",
+      "pAuthor": "Author Er Name",
       "pLikes": "8",
       "pFavorites": "16"
     },
@@ -29,8 +30,41 @@
       "pTitle": "New Post",
       "pContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "pAuthor": "Author",
-      "pLikes": "4",
-      "pFavorites": "8"
+      "pLikes": "2",
+      "pFavorites": "4"
+    },
+    {
+      "pID": "0004",
+      "photoThumbnail": "assets/images/postsThumbnails.jpg",
+      "videoThumbnail": null,
+      "timeStamp": "May 21, 2020 at 7:40:40 PM UTC+6",
+      "pTitle": "New Post",
+      "pContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "pAuthor": "Author",
+      "pLikes": "2",
+      "pFavorites": "4"
+    },
+    {
+      "pID": "0005",
+      "photoThumbnail": "assets/images/postsThumbnails.jpg",
+      "videoThumbnail": null,
+      "timeStamp": "May 21, 2020 at 7:40:40 PM UTC+6",
+      "pTitle": "New Post",
+      "pContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "pAuthor": "Author",
+      "pLikes": "2",
+      "pFavorites": "4"
+    },
+    {
+      "pID": "0006",
+      "photoThumbnail": "assets/images/postsThumbnails.jpg",
+      "videoThumbnail": null,
+      "timeStamp": "May 21, 2020 at 7:40:40 PM UTC+6",
+      "pTitle": "New Post",
+      "pContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "pAuthor": "Author",
+      "pLikes": "2",
+      "pFavorites": "4"
     }
   ]
 }

@@ -53,9 +53,9 @@ class _MenuState extends State<Menu> {
                           TextSpan(
                             text: "Recent Feeds",
                             style: TextStyle(
-                                color: UniversalVariables.primaryEbony,
+                                color: UniversalVariables.primaryAlabaster,
                                 fontSize: 16.0,
-                                fontFamily: 'FuturaPTBook'),
+                                fontFamily: 'FuturaPTBool'),
                           ),
                         ]),
                       ),

@@ -64,12 +64,36 @@ class _MenuState extends State<Menu> {
                   ),
                   Expanded(
                     flex: 2,
-                    child: Container(
-                      child: SvgPicture.asset(
+                    child:
+                        Stack(alignment: Alignment.center, children: <Widget>[
+                      SvgPicture.asset(
                         'assets/svgs/Notifications.svg',
                         color: UniversalVariables.primaryAlabaster,
                       ),
-                    ),
+                      Container(
+                        width: width * 0.032,
+                        height: width * 0.032,
+                        decoration: BoxDecoration(
+                          color: UniversalVariables.primaryCrimson,
+                          shape: BoxShape.rectangle,
+                          borderRadius: BorderRadius.circular(8.0),
+                        ),
+                        child: Align(
+                          alignment: Alignment.center,
+                          child: RichText(
+                            text: TextSpan(children: <TextSpan>[
+                              TextSpan(
+                                text: "9+",
+                                style: TextStyle(
+                                    color: UniversalVariables.primaryAlabaster,
+                                    fontSize: 8.0,
+                                    fontFamily: 'FuturaPTBook'),
+                              ),
+                            ]),
+                          ),
+                        ),
+                      ),
+                    ]),
                   ),
                 ],
               ),
@@ -88,18 +112,6 @@ class _MenuState extends State<Menu> {
     );
   }
 }
-
-// class Posts extends StatefulWidget {
-//   @override
-//   _PostsState createState() => _PostsState();
-// }
-
-// class _PostsState extends State<Posts> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return CustomPosts();
-//   }
-// }
 
 class Posts extends StatefulWidget {
   @override
@@ -121,6 +133,7 @@ class _PostsState extends State<Posts> {
               return ListView.builder(
                 itemCount: showData.length,
                 itemBuilder: (BuildContext context, int index) {
+                  print("Data Count: " + index.toString());
                   return CustomPosts(
                     title: showData['posts'][index]['pTitle'],
                     subtitle: showData['posts'][index]['pContent'],

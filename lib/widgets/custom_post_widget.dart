@@ -59,50 +59,66 @@ class CustomPosts extends StatelessWidget {
                       ),
                     ]),
                   ),
-                  RichText(
-                    text: TextSpan(children: <TextSpan>[
-                      TextSpan(
-                        text: subtitle,
-                        style: TextStyle(
-                            color: UniversalVariables.primaryRiverBed,
-                            fontSize: 14.0,
-                            fontFamily: 'FuturaPTBook'),
-                      ),
-                    ]),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: UniversalVariables.primaryGhostShadow,
+                      shape: BoxShape.rectangle,
+                      borderRadius: BorderRadius.circular(2.0),
+                    ),
+                    child: RichText(
+                      text: TextSpan(children: <TextSpan>[
+                        TextSpan(
+                          text: subtitle,
+                          style: TextStyle(
+                              color: UniversalVariables.primaryRiverBed,
+                              fontSize: 14.0,
+                              fontFamily: 'FuturaPTBook'),
+                        ),
+                      ]),
+                    ),
                   ),
                 ],
               ),
             ),
             Container(
-              margin: EdgeInsets.only(top: height * 0.22),
+              margin: EdgeInsets.only(top: height * 0.23),
               padding: EdgeInsets.symmetric(horizontal: width * 0.02),
               child: Row(
                 children: [
                   Expanded(
-                    flex: 14,
+                    flex: 13,
                     child: Container(),
                   ),
                   Expanded(
-                    flex: 4,
-                    child: Row(
-                      children: <Widget>[
-                        RichText(
-                          text: TextSpan(children: <TextSpan>[
-                            TextSpan(
-                              text: '0.5k',
-                              style: TextStyle(
-                                  color: UniversalVariables.primaryGhost,
-                                  fontSize: 14.0,
-                                  fontFamily: 'FuturaPTBook'),
+                    flex: 5,
+                    child: Align(
+                      alignment: Alignment.centerRight,
+                      child: Row(
+                        children: <Widget>[
+                          Align(
+                            alignment: Alignment.centerRight,
+                            child: RichText(
+                              text: TextSpan(children: <TextSpan>[
+                                TextSpan(
+                                  text: '0.5k',
+                                  style: TextStyle(
+                                      color: UniversalVariables.primaryGhost,
+                                      fontSize: 14.0,
+                                      fontFamily: 'FuturaPTBook'),
+                                ),
+                              ]),
                             ),
-                          ]),
-                        ),
-                        SvgPicture.asset(
-                          'assets/svgs/Heart.svg',
-                          width: width * 0.08,
-                          color: UniversalVariables.primaryGhost,
-                        ),
-                      ],
+                          ),
+                          Align(
+                            alignment: Alignment.centerRight,
+                            child: SvgPicture.asset(
+                              'assets/svgs/Heart.svg',
+                              width: width * 0.08,
+                              color: UniversalVariables.primaryGhost,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Expanded(

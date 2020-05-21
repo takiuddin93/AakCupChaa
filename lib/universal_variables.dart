@@ -9,4 +9,5 @@ class UniversalVariables {
   static final Color primaryEbony = Color(0xFF04080F);
   static final Color primaryEbonyShadow = Color(0x2904080F);
   static final Color primaryGhost = Color(0xFFCACFD6);
+  static final Color primaryGhostShadow = Color(0x29CACFD6);
 }

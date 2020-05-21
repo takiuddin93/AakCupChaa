@@ -1,7 +1,5 @@
 # AakCupChaa
 
-A new Flutter project.
-
 ### Description
 
 Lets see where this goes as I progress.
@@ -10,7 +8,7 @@ Lets see where this goes as I progress.
 
 * Clone this repo
 * Run `flutter packages get`
-* Run `flutter run` (remember open simulator or connect physical device, iOS auto run additional command `pod install`)
+* Run `flutter run` (remember to open simulator or connect physical device, iOS auto run additional command `pod install`)
 
 ### For Beginners
 

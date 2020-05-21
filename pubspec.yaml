@@ -21,6 +21,9 @@ dependencies:
   # for share via
   share: ^0.6.4+2
 
+  #for animated dialogs
+  animated_dialog_box: ^0.0.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

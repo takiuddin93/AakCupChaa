@@ -43,10 +43,9 @@ class _MenuState extends State<Menu> {
                         offset: Offset(0.0, 1.0),
                         blurRadius: 4.0)
                   ]),
-              child: Row(
-                children: <Widget>[
-                  Expanded(
-                    flex: 8,
+              child: Stack(
+                children: [
+                  Positioned(
                     child: Align(
                       alignment: Alignment.center,
                       child: RichText(
@@ -54,46 +53,49 @@ class _MenuState extends State<Menu> {
                           TextSpan(
                             text: "Recent Feeds",
                             style: TextStyle(
-                                color: UniversalVariables.primaryAlabaster,
-                                fontSize: 18.0,
+                                color: UniversalVariables.primaryEbony,
+                                fontSize: 16.0,
                                 fontFamily: 'FuturaPTBook'),
                           ),
                         ]),
                       ),
                     ),
                   ),
-                  Expanded(
-                    flex: 2,
-                    child:
-                        Stack(alignment: Alignment.center, children: <Widget>[
-                      SvgPicture.asset(
-                        'assets/svgs/Notifications.svg',
-                        color: UniversalVariables.primaryAlabaster,
-                      ),
-                      Container(
-                        width: width * 0.032,
-                        height: width * 0.032,
-                        decoration: BoxDecoration(
-                          color: UniversalVariables.primaryCrimson,
-                          shape: BoxShape.rectangle,
-                          borderRadius: BorderRadius.circular(8.0),
+                  Positioned(
+                    child: Align(
+                      alignment: Alignment.centerRight,
+                      child:
+                          Stack(alignment: Alignment.center, children: <Widget>[
+                        SvgPicture.asset(
+                          'assets/svgs/Notifications.svg',
+                          color: UniversalVariables.primaryAlabaster,
                         ),
-                        child: Align(
-                          alignment: Alignment.center,
-                          child: RichText(
-                            text: TextSpan(children: <TextSpan>[
-                              TextSpan(
-                                text: "9+",
-                                style: TextStyle(
-                                    color: UniversalVariables.primaryAlabaster,
-                                    fontSize: 8.0,
-                                    fontFamily: 'FuturaPTBook'),
-                              ),
-                            ]),
+                        Container(
+                          width: width * 0.032,
+                          height: width * 0.032,
+                          decoration: BoxDecoration(
+                            color: UniversalVariables.primaryCrimson,
+                            shape: BoxShape.rectangle,
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          child: Align(
+                            alignment: Alignment.center,
+                            child: RichText(
+                              text: TextSpan(children: <TextSpan>[
+                                TextSpan(
+                                  text: "9+",
+                                  style: TextStyle(
+                                      color:
+                                          UniversalVariables.primaryAlabaster,
+                                      fontSize: 8.0,
+                                      fontFamily: 'FuturaPTBook'),
+                                ),
+                              ]),
+                            ),
                           ),
                         ),
-                      ),
-                    ]),
+                      ]),
+                    ),
                   ),
                 ],
               ),

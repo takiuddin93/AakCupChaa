@@ -10,7 +10,8 @@ before_script:
   - ./flutter/bin/flutter doctor
 
 script:
-    - flutter run
+  - flutter pub get
+  - flutter run
 
 notifications:
   email: takiuddin93@gmail.com

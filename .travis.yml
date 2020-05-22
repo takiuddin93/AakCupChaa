@@ -2,11 +2,12 @@
 language: dart
 dart: stable
 os: linux
-distro: bionic
+distrom m: bionic
 
 before_script:
   - git clone https://github.com/flutter/flutter.git -b beta
   - export PATH=`pwd`/flutter/bin:`pwd`/flutter/bin/cache/dart-sdk/bin:$PATH
+  - ./flutter/bin/flutter doctor
 
 script:
     - flutter run

@@ -9,7 +9,7 @@ install:
   - git clone https://github.com/flutter/flutter.git -b beta
   - ./flutter/bin/flutter doctor
 script:
-  - ./flutter/bin/flutter run --coverage
+  - ./flutter/bin/flutter run
 cache:
   directories:
     - $HOME/.pub-cache

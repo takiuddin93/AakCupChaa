@@ -10,7 +10,7 @@ import 'package:aakcupchaa/main.dart';
 import 'package:aakcupchaa/splashscreen.dart';
 
 void main() {
-  testWidgets('Find WIdgets', (WidgetTester tester) async {
+  testWidgets('Find Widgets', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(Main());
     var splashScreen = find.byType(SplashScreen);

@@ -6,21 +6,39 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:aakcupchaa/main.dart';
+import 'package:aakcupchaa/dashboard.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(Main());
+    await tester.pumpWidget(DashBoard());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
     expect(find.text('1'), findsNothing);
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
+    // Tap 'Menu' and trigger a frame.
+    await tester.tap(find.byWidget(SvgPicture.asset('assets/svgs/Menu.svg')));
+    await tester.pump();
+
+    // Verify that our counter has incremented.
+    expect(find.text('0'), findsNothing);
+    expect(find.text('1'), findsOneWidget);
+
+    // Tap 'Stats' and trigger a frame.
+    await tester.tap(find.byWidget(SvgPicture.asset('assets/svgs/Stats.svg')));
+    await tester.pump();
+
+    // Verify that our counter has incremented.
+    expect(find.text('0'), findsNothing);
+    expect(find.text('1'), findsOneWidget);
+
+    // Tap 'Settings' and trigger a frame.
+    await tester
+        .tap(find.byWidget(SvgPicture.asset('assets/svgs/Settings.svg')));
     await tester.pump();
 
     // Verify that our counter has incremented.

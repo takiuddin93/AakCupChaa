@@ -1,11 +1,15 @@
 
 language: dart
-dart:
-  - stable
-os: 
-  - windows
+dart: stable
+os: linux
+distro: bionic
 
-env: FLUTTER_VERSION=beta
+before_script:
+  - git clone https://github.com/flutter/flutter.git -b beta
+  - export PATH=`pwd`/flutter/bin:`pwd`/flutter/bin/cache/dart-sdk/bin:$PATH
+
+script:
+    - flutter run
 
 notifications:
   email: takiuddin93@gmail.com

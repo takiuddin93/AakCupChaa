@@ -1,1 +1,11 @@
 
+language: dart
+dart:
+  - stable
+os: 
+  - windows
+
+env: FLUTTER_VERSION=beta
+
+notifications:
+  email: takiuddin93@gmail.com

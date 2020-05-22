@@ -1,5 +1,7 @@
 # AakCupChaa
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/da136dab96964565acd58ff67bfbc36a)](https://app.codacy.com/manual/takiuddin93/AakCupChaa?utm_source=github.com&utm_medium=referral&utm_content=takiuddin93/AakCupChaa&utm_campaign=Badge_Grade_Dashboard)
+
 ## Description
 
 Lets see where this goes as I progress.

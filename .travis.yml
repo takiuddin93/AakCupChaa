@@ -2,7 +2,7 @@
 language: dart
 dart: stable
 os: linux
-distrom m: bionic
+dist: bionic
 
 before_script:
   - git clone https://github.com/flutter/flutter.git -b beta

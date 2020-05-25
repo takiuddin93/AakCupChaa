@@ -121,7 +121,7 @@ class _MenuState extends State<Menu> {
               margin: EdgeInsets.only(
                 top: height * 0.08,
               ),
-              child: Posts(),
+              child: FeedPosts(),
             ),
           ),
         ],
@@ -130,12 +130,12 @@ class _MenuState extends State<Menu> {
   }
 }
 
-class Posts extends StatefulWidget {
+class FeedPosts extends StatefulWidget {
   @override
-  _PostsState createState() => _PostsState();
+  _FeedPostsState createState() => _FeedPostsState();
 }
 
-class _PostsState extends State<Posts> {
+class _FeedPostsState extends State<FeedPosts> {
   @override
   Widget build(BuildContext context) {
     Size media = MediaQuery.of(context).size;
@@ -197,7 +197,7 @@ class _PostsState extends State<Posts> {
                           borderRadius: BorderRadius.circular(2.0)),
                       child: FlatButton(
                           onPressed: () {
-                            Posts();
+                            FeedPosts();
                             print("Explore creators");
                           },
                           child: RichText(

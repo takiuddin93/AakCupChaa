@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:aakcupchaa/universal_variables.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class Stats extends StatefulWidget {
   @override

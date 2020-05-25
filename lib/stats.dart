@@ -136,11 +136,40 @@ class _StatsState extends State<Stats> {
               margin: EdgeInsets.only(
                 top: height * 0.16,
               ),
-              child: Container(),
+              child: StatsPosts(),
             ),
           ),
         ],
       ),
+    );
+  }
+}
+
+class StatsPosts extends StatefulWidget {
+  @override
+  StatsPostsState createState() => StatsPostsState();
+}
+
+class StatsPostsState extends State<StatsPosts> {
+  @override
+  Widget build(BuildContext context) {
+    Size media = MediaQuery.of(context).size;
+    double width = media.width;
+    double height = media.height;
+    return Container(
+      child: Column(children: [
+        RichText(
+          text: TextSpan(children: <TextSpan>[
+            TextSpan(
+              text: "Stats",
+              style: TextStyle(
+                  color: UniversalVariables.primaryEbony,
+                  fontSize: 16.0,
+                  fontFamily: 'FuturaPTBool'),
+            ),
+          ]),
+        ),
+      ]),
     );
   }
 }

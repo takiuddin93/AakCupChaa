@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:aakcupchaa/universal_variables.dart';
 
-class Stats extends StatefulWidget {
+class Statistics extends StatefulWidget {
   @override
-  _StatsState createState() => _StatsState();
+  _StatisticsState createState() => _StatisticsState();
 }
 
-class _StatsState extends State<Stats> {
+class _StatisticsState extends State<Statistics> {
   @override
   Widget build(BuildContext context) {
     Size media = MediaQuery.of(context).size;

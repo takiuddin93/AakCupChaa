@@ -3,7 +3,7 @@ import 'package:aakcupchaa/universal_variables.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:share/share.dart';
 import 'package:aakcupchaa/menu.dart';
-import 'package:aakcupchaa/stats.dart';
+import 'package:aakcupchaa/statistics.dart';
 import 'package:aakcupchaa/settings.dart';
 
 enum MenuMarker { menu, stats, settings }
@@ -213,7 +213,7 @@ class _DashBoardState extends State<DashBoard>
       case MenuMarker.menu:
         return Menu();
       case MenuMarker.stats:
-        return Stats();
+        return Statistics();
       case MenuMarker.settings:
         return Settings();
     }

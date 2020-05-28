@@ -196,5 +196,6 @@ class _DashBoardState extends State<DashBoard>
       case MenuMarker.settings:
         return Settings();
     }
+    return Menu();
   }
 }

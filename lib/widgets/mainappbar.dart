@@ -1,5 +1,4 @@
 import 'package:aakcupchaa/dashboard.dart';
-import 'package:aakcupchaa/menu.dart';
 import 'package:aakcupchaa/universal_variables.dart';
 import 'package:aakcupchaa/utils/mainappbar_style.dart';
 import 'package:aakcupchaa/widgets/custom_notification_dialog_widget.dart';
@@ -108,11 +107,11 @@ class MainAppBar extends StatelessWidget {
   }
 
   Builder _buildaction(BuildContext context) {
-    String _alertdialogTitle, _alertdialogDescription, _alertdialogButton;
+    String _alertdialogTitle, _alertdialogText, _alertdialogFirstButton;
     if (title == 'Recent Feeds') {
       _alertdialogTitle = 'Work in Progress';
-      _alertdialogDescription = 'This feature has not been implemented yet!';
-      _alertdialogButton = 'Back';
+      _alertdialogText = 'This feature has not been implemented yet!';
+      _alertdialogFirstButton = 'Ok';
     } else {}
     return Builder(
       builder: (context) => IconButton(
@@ -121,10 +120,10 @@ class MainAppBar extends StatelessWidget {
         onPressed: () {
           CustomDialog.showScaleAlertBox(
             context: context,
-            title: "Alert",
+            title: _alertdialogTitle,
             icon: Icons.info_outline, // IF YOU WANT TO ADD ICON
-            text: 'Feature not yet implemented!', // IF YOU WANT TO ADD
-            firstButton: "Ok",
+            text: _alertdialogText, // IF YOU WANT TO ADD
+            firstButton: _alertdialogFirstButton,
           );
         },
       ),

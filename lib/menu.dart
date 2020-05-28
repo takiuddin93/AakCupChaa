@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'package:aakcupchaa/search.dart';
-import 'package:aakcupchaa/widgets/custom_notification_dialog_widget.dart';
 import 'package:aakcupchaa/widgets/custom_post_widget.dart';
 import 'package:aakcupchaa/widgets/mainappbar.dart';
 import 'package:flutter/material.dart';

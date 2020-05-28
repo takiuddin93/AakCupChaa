@@ -18,22 +18,6 @@ class DashBoard extends StatefulWidget {
 class _DashBoardState extends State<DashBoard>
     with SingleTickerProviderStateMixin<DashBoard> {
   MenuMarker selectedMenuMarker = MenuMarker.menu;
-  AnimationController _controller;
-  Animation _animation;
-  @override
-  void initState() {
-    super.initState();
-    // onMenuPressed(item: 0);
-    _controller =
-        AnimationController(vsync: this, duration: Duration(milliseconds: 500));
-    _animation = Tween(begin: 0.0, end: 1.0).animate(_controller);
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
-    _controller.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -54,9 +38,9 @@ class _DashBoardState extends State<DashBoard>
                 bottom: 0.0,
               ),
               child: FutureBuilder(
-                future: _playAnimation(),
+                future: null,
                 builder: (BuildContext context, AsyncSnapshot snapshot) {
-                  return getCustomContainer();
+                  return getCustomMenu();
                 },
               ),
             ),
@@ -203,12 +187,7 @@ class _DashBoardState extends State<DashBoard>
     );
   }
 
-  _playAnimation() {
-    _controller.reset();
-    _controller.forward();
-  }
-
-  Widget getCustomContainer() {
+  Widget getCustomMenu() {
     switch (selectedMenuMarker) {
       case MenuMarker.menu:
         return Menu();
@@ -217,36 +196,5 @@ class _DashBoardState extends State<DashBoard>
       case MenuMarker.settings:
         return Settings();
     }
-    return getGraphContainer();
-  }
-
-  Widget getGraphContainer() {
-    return FadeTransition(
-      opacity: _animation,
-      child: Container(
-        color: Colors.red,
-        height: 200,
-      ),
-    );
-  }
-
-  Widget getStatsContainer() {
-    return FadeTransition(
-      opacity: _animation,
-      child: Container(
-        color: Colors.green,
-        height: 300,
-      ),
-    );
-  }
-
-  Widget getInfoContainer() {
-    return FadeTransition(
-      opacity: _animation,
-      child: Container(
-        color: Colors.blue,
-        height: 400,
-      ),
-    );
   }
 }

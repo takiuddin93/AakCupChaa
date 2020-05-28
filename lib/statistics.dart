@@ -131,11 +131,96 @@ class _StatisticsState extends State<Statistics> {
             ),
           ),
           Positioned(
+            top: height * 0.16,
+            child: Padding(
+              padding: const EdgeInsets.only(
+                left: 16.0,
+                top: 16.0,
+                right: 16.0,
+                bottom: 0.0,
+              ),
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: RichText(
+                  text: TextSpan(children: <TextSpan>[
+                    TextSpan(
+                      text: "Statistics",
+                      style: TextStyle(
+                          color: UniversalVariables.primaryEbony,
+                          fontSize: 16.0,
+                          fontFamily: 'FuturaPTBool'),
+                    ),
+                  ]),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
             child: Container(
               margin: EdgeInsets.only(
-                top: height * 0.16,
+                top: height * 0.24,
               ),
-              child: StatsPosts(),
+              child: Column(children: [
+                Expanded(
+                    flex: 1,
+                    child: Row(children: <Widget>[
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          width: width * 0.33,
+                          color: UniversalVariables.primaryCrimson,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          width: width * 0.33,
+                          color: UniversalVariables.primaryAlabaster,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          width: width * 0.33,
+                          color: UniversalVariables.primaryEbony,
+                        ),
+                      )
+                    ]))
+              ]),
+            ),
+          ),
+          Positioned(
+            child: Container(
+              margin: EdgeInsets.only(
+                top: height * 0.48,
+              ),
+              child: Column(children: [
+                Expanded(
+                    flex: 1,
+                    child: Row(children: <Widget>[
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          width: width * 0.33,
+                          color: UniversalVariables.primaryEbony,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          width: width * 0.33,
+                          color: UniversalVariables.primaryCrimson,
+                        ),
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                          width: width * 0.33,
+                          color: UniversalVariables.primaryAlabaster,
+                        ),
+                      )
+                    ]))
+              ]),
             ),
           ),
         ],
@@ -157,17 +242,31 @@ class StatsPostsState extends State<StatsPosts> {
     double height = media.height;
     return Container(
       child: Column(children: [
-        RichText(
-          text: TextSpan(children: <TextSpan>[
-            TextSpan(
-              text: "Stats",
-              style: TextStyle(
+        Expanded(
+            flex: 1,
+            child: Row(children: <Widget>[
+              Expanded(
+                flex: 1,
+                child: Container(
+                  width: width * 0.33,
+                  color: UniversalVariables.primaryCrimson,
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: Container(
+                  width: width * 0.33,
+                  color: UniversalVariables.primaryAlabaster,
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: Container(
+                  width: width * 0.33,
                   color: UniversalVariables.primaryEbony,
-                  fontSize: 16.0,
-                  fontFamily: 'FuturaPTBool'),
-            ),
-          ]),
-        ),
+                ),
+              )
+            ]))
       ]),
     );
   }

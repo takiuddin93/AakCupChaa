@@ -2,6 +2,7 @@ import 'package:aakcupchaa/dashboard.dart';
 import 'package:aakcupchaa/menu.dart';
 import 'package:aakcupchaa/universal_variables.dart';
 import 'package:aakcupchaa/utils/mainappbar_style.dart';
+import 'package:aakcupchaa/widgets/custom_notification_dialog_widget.dart';
 import 'package:flutter/material.dart';
 
 class MainAppBar extends StatelessWidget {
@@ -118,29 +119,12 @@ class MainAppBar extends StatelessWidget {
         color: UniversalVariables.primaryAlabaster,
         icon: new Icon(Icons.notifications),
         onPressed: () {
-          showDialog<void>(
+          CustomDialog.showScaleAlertBox(
             context: context,
-            barrierDismissible: false, // user must tap button!
-            builder: (BuildContext context) {
-              return AlertDialog(
-                title: Text(_alertdialogTitle),
-                content: SingleChildScrollView(
-                  child: ListBody(
-                    children: <Widget>[
-                      Text(_alertdialogDescription),
-                    ],
-                  ),
-                ),
-                actions: <Widget>[
-                  FlatButton(
-                    child: Text(_alertdialogButton),
-                    onPressed: () {
-                      Navigator.of(context).pop();
-                    },
-                  ),
-                ],
-              );
-            },
+            title: "Alert",
+            icon: Icons.info_outline, // IF YOU WANT TO ADD ICON
+            text: 'Feature not yet implemented!', // IF YOU WANT TO ADD
+            firstButton: "Ok",
           );
         },
       ),

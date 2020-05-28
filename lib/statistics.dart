@@ -15,6 +15,7 @@ class _StatisticsState extends State<Statistics> {
     return Center(
       child: Stack(
         children: <Widget>[
+          // Top Bar
           Positioned(
             child: Container(
               width: width,
@@ -130,98 +131,128 @@ class _StatisticsState extends State<Statistics> {
               ),
             ),
           ),
+          // Statistics Text
           Positioned(
             top: height * 0.16,
-            child: Padding(
-              padding: const EdgeInsets.only(
-                left: 16.0,
-                top: 16.0,
-                right: 16.0,
-                bottom: 0.0,
-              ),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: RichText(
-                  text: TextSpan(children: <TextSpan>[
-                    TextSpan(
-                      text: "Statistics",
-                      style: TextStyle(
-                          color: UniversalVariables.primaryEbony,
-                          fontSize: 16.0,
-                          fontFamily: 'FuturaPTBool'),
-                    ),
-                  ]),
+            child: Container(
+              height: height * 0.06,
+              child: Padding(
+                padding: EdgeInsets.only(
+                  left: 16.0,
+                  top: height * 0.02,
+                  right: 16.0,
+                  bottom: height * 0.02,
+                ),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: RichText(
+                    text: TextSpan(children: <TextSpan>[
+                      TextSpan(
+                        text: "Statistics",
+                        style: TextStyle(
+                            color: UniversalVariables.primaryEbony,
+                            fontSize: 16.0,
+                            fontFamily: 'FuturaPTBool'),
+                      ),
+                    ]),
+                  ),
                 ),
               ),
             ),
           ),
+          // Day Cards
           Positioned(
             child: Container(
+              height: height * 0.16,
               margin: EdgeInsets.only(
-                top: height * 0.24,
+                top: height * 0.22,
               ),
-              child: Column(children: [
+              child: Row(children: <Widget>[
                 Expanded(
-                    flex: 1,
-                    child: Row(children: <Widget>[
-                      Expanded(
-                        flex: 1,
-                        child: Container(
-                          width: width * 0.33,
-                          color: UniversalVariables.primaryCrimson,
-                        ),
-                      ),
-                      Expanded(
-                        flex: 1,
-                        child: Container(
-                          width: width * 0.33,
-                          color: UniversalVariables.primaryAlabaster,
-                        ),
-                      ),
-                      Expanded(
-                        flex: 1,
-                        child: Container(
-                          width: width * 0.33,
-                          color: UniversalVariables.primaryEbony,
-                        ),
-                      )
-                    ]))
+                  flex: 1,
+                  child: Container(
+                    width: width * 0.33,
+                    color: UniversalVariables.primaryCrimson,
+                  ),
+                ),
+                Expanded(
+                  flex: 1,
+                  child: Container(
+                    width: width * 0.33,
+                    color: UniversalVariables.primaryAlabaster,
+                  ),
+                ),
+                Expanded(
+                  flex: 1,
+                  child: Container(
+                    width: width * 0.33,
+                    color: UniversalVariables.primaryEbony,
+                  ),
+                )
               ]),
             ),
           ),
+          // Recent Statistics Text
           Positioned(
             child: Container(
+              height: height * 0.16,
               margin: EdgeInsets.only(
-                top: height * 0.48,
+                top: height * 0.32,
               ),
-              child: Column(children: [
-                Expanded(
-                    flex: 1,
-                    child: Row(children: <Widget>[
-                      Expanded(
-                        flex: 1,
-                        child: Container(
-                          width: width * 0.33,
-                          color: UniversalVariables.primaryEbony,
-                        ),
+              child: Padding(
+                padding: EdgeInsets.only(
+                  left: 16.0,
+                  top: height * 0.02,
+                  right: 16.0,
+                  bottom: 0.0,
+                ),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: RichText(
+                    text: TextSpan(children: <TextSpan>[
+                      TextSpan(
+                        text: "Recent Statistics",
+                        style: TextStyle(
+                            color: UniversalVariables.primaryEbony,
+                            fontSize: 16.0,
+                            fontFamily: 'FuturaPTBool'),
                       ),
-                      Expanded(
-                        flex: 1,
-                        child: Container(
-                          width: width * 0.33,
-                          color: UniversalVariables.primaryCrimson,
-                        ),
-                      ),
-                      Expanded(
-                        flex: 1,
-                        child: Container(
-                          width: width * 0.33,
-                          color: UniversalVariables.primaryAlabaster,
-                        ),
-                      )
-                    ]))
-              ]),
+                    ]),
+                  ),
+                ),
+              ),
             ),
+          ),
+          //Bottom Container
+          Positioned(
+            child: Container(
+                height: height * 1.0,
+                margin: EdgeInsets.only(
+                  top: height * 0.44,
+                ),
+                child: Row(children: <Widget>[
+                  Expanded(
+                    flex: 1,
+                    child: Container(
+                      width: width * 0.33,
+                      color: UniversalVariables.primaryAlabaster,
+                    ),
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Container(
+                      width: width * 0.33,
+                      color: UniversalVariables.primaryEbony,
+                    ),
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Container(
+                      width: width * 0.33,
+                      color: UniversalVariables.primaryCrimson,
+                    ),
+                  )
+                ])),
           ),
         ],
       ),

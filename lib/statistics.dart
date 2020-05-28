@@ -167,29 +167,7 @@ class _StatisticsState extends State<Statistics> {
               margin: EdgeInsets.only(
                 top: height * 0.22,
               ),
-              child: Row(children: <Widget>[
-                Expanded(
-                  flex: 1,
-                  child: Container(
-                    width: width * 0.33,
-                    color: UniversalVariables.primaryCrimson,
-                  ),
-                ),
-                Expanded(
-                  flex: 1,
-                  child: Container(
-                    width: width * 0.33,
-                    color: UniversalVariables.primaryAlabaster,
-                  ),
-                ),
-                Expanded(
-                  flex: 1,
-                  child: Container(
-                    width: width * 0.33,
-                    color: UniversalVariables.primaryEbony,
-                  ),
-                )
-              ]),
+              child: StatsPosts(),
             ),
           ),
           // Recent Statistics Text
@@ -272,32 +250,29 @@ class StatsPostsState extends State<StatsPosts> {
     double width = media.width;
     double height = media.height;
     return Container(
-      child: Column(children: [
+      height: height * 0.16,
+      child: Row(children: <Widget>[
         Expanded(
-            flex: 1,
-            child: Row(children: <Widget>[
-              Expanded(
-                flex: 1,
-                child: Container(
-                  width: width * 0.33,
-                  color: UniversalVariables.primaryCrimson,
-                ),
-              ),
-              Expanded(
-                flex: 1,
-                child: Container(
-                  width: width * 0.33,
-                  color: UniversalVariables.primaryAlabaster,
-                ),
-              ),
-              Expanded(
-                flex: 1,
-                child: Container(
-                  width: width * 0.33,
-                  color: UniversalVariables.primaryEbony,
-                ),
-              )
-            ]))
+          flex: 1,
+          child: Container(
+            width: width * 0.33,
+            color: UniversalVariables.primaryCrimson,
+          ),
+        ),
+        Expanded(
+          flex: 1,
+          child: Container(
+            width: width * 0.33,
+            color: UniversalVariables.primaryAlabaster,
+          ),
+        ),
+        Expanded(
+          flex: 1,
+          child: Container(
+            width: width * 0.33,
+            color: UniversalVariables.primaryEbony,
+          ),
+        )
       ]),
     );
   }

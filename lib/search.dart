@@ -1,16 +1,7 @@
-import 'dart:async';
-import 'package:aakcupchaa/dashboard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'widgets/mainappbar.dart';
-
-Color black = Color(0xFF000000);
-Color white = Color(0xFFFFFFFF);
-Color green = Color(0xFF6B8449);
-main() {
-  runApp(Search());
-}
 
 class Search extends StatelessWidget {
   @override
@@ -35,25 +26,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  var _alignment = Alignment.center;
-  bool _visible = false;
-  Timer _timer;
-
-  _MyHomePageState() {
-    _timer = new Timer(const Duration(milliseconds: 1500), () {
-      setState(() {
-        _alignment = Alignment.topCenter;
-        _visible = true;
-      });
-    });
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
-    _timer.cancel();
-  }
-
   @override
   Widget build(BuildContext context) {
     Size media = MediaQuery.of(context).size;

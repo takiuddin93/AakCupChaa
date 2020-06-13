@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:aakcupchaa/universal_variables.dart';
+import 'package:aakcupchaa/utils/universal_variables.dart';
 
 class Settings extends StatefulWidget {
   @override

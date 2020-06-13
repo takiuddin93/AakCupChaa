@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:aakcupchaa/dashboard.dart';
 import 'package:flutter/material.dart';
-import 'package:aakcupchaa/universal_variables.dart';
+import 'package:aakcupchaa/utils/universal_variables.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class SplashScreen extends StatefulWidget {

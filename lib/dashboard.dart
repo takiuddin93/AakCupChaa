@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:aakcupchaa/universal_variables.dart';
+import 'package:aakcupchaa/utils/universal_variables.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:share/share.dart';
 import 'package:aakcupchaa/menu.dart';

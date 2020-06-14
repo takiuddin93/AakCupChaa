@@ -1,3 +1,4 @@
+import 'package:aakcupchaa/widgets/custom_notification_dialog_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:aakcupchaa/utils/universal_variables.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -21,6 +22,10 @@ class _DashBoardState extends State<DashBoard>
 
   @override
   Widget build(BuildContext context) {
+    String _alertdialogTitle, _alertdialogText, _alertdialogFirstButton;
+    _alertdialogTitle = 'Work in Progress';
+    _alertdialogText = 'This feature has not been implemented yet!';
+    _alertdialogFirstButton = 'Ok';
     Size media = MediaQuery.of(context).size;
     double width = media.width;
     double height = media.height;
@@ -58,7 +63,7 @@ class _DashBoardState extends State<DashBoard>
             child: Column(
               children: <Widget>[
                 Expanded(
-                    flex: 3,
+                    flex: 4,
                     child: Column(
                       children: <Widget>[
                         Padding(
@@ -111,10 +116,27 @@ class _DashBoardState extends State<DashBoard>
                             ),
                           ),
                         ),
+                        IconButton(
+                          color: UniversalVariables.primaryCrimson,
+                          icon: new Icon(
+                            Icons.notifications,
+                            size: 32.0,
+                          ),
+                          onPressed: () {
+                            CustomDialog.showScaleAlertBox(
+                              context: context,
+                              title: _alertdialogTitle,
+                              icon:
+                                  Icons.info_outline, // IF YOU WANT TO ADD ICON
+                              text: _alertdialogText, // IF YOU WANT TO ADD
+                              firstButton: _alertdialogFirstButton,
+                            );
+                          },
+                        ),
                       ],
                     )),
                 Expanded(
-                  flex: 4,
+                  flex: 3,
                   child: Container(),
                 ),
                 Expanded(

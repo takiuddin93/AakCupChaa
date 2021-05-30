@@ -46,29 +46,34 @@ class _SplashScreenState extends State<SplashScreen> {
             right: media.width * 0.10,
             child: Center(
               child: RichText(
-                text: TextSpan(children: <TextSpan>[
-                  TextSpan(
-                    text: 'Aak',
-                    style: TextStyle(
+                text: TextSpan(
+                  children: <TextSpan>[
+                    TextSpan(
+                      text: 'Aak',
+                      style: TextStyle(
                         color: UniversalVariables.primaryCrimson,
                         fontSize: 48.0,
-                        fontFamily: 'FuturaPTBook'),
-                  ),
-                  TextSpan(
-                    text: 'Cup',
-                    style: TextStyle(
+                        fontFamily: 'FuturaPTBook',
+                      ),
+                    ),
+                    TextSpan(
+                      text: 'Cup',
+                      style: TextStyle(
                         color: UniversalVariables.primaryCrimson,
                         fontSize: 48.0,
-                        fontFamily: 'FuturaPTHeavy'),
-                  ),
-                  TextSpan(
-                    text: 'Chaa',
-                    style: TextStyle(
+                        fontFamily: 'FuturaPTHeavy',
+                      ),
+                    ),
+                    TextSpan(
+                      text: 'Chaa',
+                      style: TextStyle(
                         color: UniversalVariables.primaryCrimson,
                         fontSize: 48.0,
-                        fontFamily: 'FuturaPTBook'),
-                  )
-                ]),
+                        fontFamily: 'FuturaPTBook',
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           ),
@@ -77,30 +82,31 @@ class _SplashScreenState extends State<SplashScreen> {
             left: media.width * 0.24,
             right: media.width * 0.24,
             child: Center(
-                child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: <Widget>[
-                Text(
-                  "Share",
-                  style: TextStyle(
-                    fontSize: 14.0,
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Text(
+                    "Share",
+                    style: TextStyle(
+                      fontSize: 14.0,
+                    ),
                   ),
-                ),
-                Text(
-                  "Engage",
-                  style: TextStyle(
-                    fontSize: 14.0,
+                  Text(
+                    "Engage",
+                    style: TextStyle(
+                      fontSize: 14.0,
+                    ),
                   ),
-                ),
-                Text(
-                  "Repeat",
-                  style: TextStyle(
-                    fontSize: 14.0,
+                  Text(
+                    "Repeat",
+                    style: TextStyle(
+                      fontSize: 14.0,
+                    ),
                   ),
-                ),
-              ],
-            )),
+                ],
+              ),
+            ),
           ),
         ],
       ),

@@ -25,20 +25,22 @@ class _StatisticsState extends State<Statistics> {
                 horizontal: 0.0,
               ),
               decoration: BoxDecoration(
-                  color: UniversalVariables.primaryCrimson,
-                  shape: BoxShape.rectangle,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(0.0),
-                    topRight: Radius.circular(0.0),
-                    bottomRight: Radius.circular(4.0),
-                    bottomLeft: Radius.circular(0.0),
-                  ),
-                  boxShadow: [
-                    BoxShadow(
-                        color: UniversalVariables.primaryEbony,
-                        offset: Offset(0.0, 1.0),
-                        blurRadius: 4.0)
-                  ]),
+                color: UniversalVariables.primaryCrimson,
+                shape: BoxShape.rectangle,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(0.0),
+                  topRight: Radius.circular(0.0),
+                  bottomRight: Radius.circular(4.0),
+                  bottomLeft: Radius.circular(0.0),
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: UniversalVariables.primaryEbony,
+                    offset: Offset(0.0, 1.0),
+                    blurRadius: 4.0,
+                  )
+                ],
+              ),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -53,27 +55,33 @@ class _StatisticsState extends State<Statistics> {
                           padding: EdgeInsets.only(
                               left: 8.0, top: 0.0, right: 8.0, bottom: 8.0),
                           child: RichText(
-                            text: TextSpan(children: <TextSpan>[
-                              TextSpan(
-                                text: "0",
-                                style: TextStyle(
+                            text: TextSpan(
+                              children: <TextSpan>[
+                                TextSpan(
+                                  text: "0",
+                                  style: TextStyle(
                                     color: UniversalVariables.primaryAlabaster,
                                     fontSize: 20.0,
-                                    fontFamily: 'FuturaPTBool'),
-                              ),
-                            ]),
+                                    fontFamily: 'FuturaPTBool',
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                         RichText(
-                          text: TextSpan(children: <TextSpan>[
-                            TextSpan(
-                              text: "Supporters",
-                              style: TextStyle(
+                          text: TextSpan(
+                            children: <TextSpan>[
+                              TextSpan(
+                                text: "Supporters",
+                                style: TextStyle(
                                   color: UniversalVariables.primaryAlabaster,
                                   fontSize: 16.0,
-                                  fontFamily: 'FuturaPTBool'),
-                            ),
-                          ]),
+                                  fontFamily: 'FuturaPTBool',
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),
@@ -88,37 +96,44 @@ class _StatisticsState extends State<Statistics> {
                           padding: EdgeInsets.only(
                               left: 8.0, top: 0.0, right: 8.0, bottom: 8.0),
                           child: RichText(
-                            text: TextSpan(children: <TextSpan>[
-                              TextSpan(
+                            text: TextSpan(
+                              children: <TextSpan>[
+                                TextSpan(
                                   text: "৳ ",
                                   style: TextStyle(
-                                      color:
-                                          UniversalVariables.primaryAlabaster,
-                                      fontSize: 16.0,
-                                      fontFamily: 'FuturaPTBool'),
+                                    color: UniversalVariables.primaryAlabaster,
+                                    fontSize: 16.0,
+                                    fontFamily: 'FuturaPTBool',
+                                  ),
                                   children: <TextSpan>[
                                     TextSpan(
                                       text: "0",
                                       style: TextStyle(
-                                          color: UniversalVariables
-                                              .primaryAlabaster,
-                                          fontSize: 20.0,
-                                          fontFamily: 'FuturaPTBool'),
+                                        color:
+                                            UniversalVariables.primaryAlabaster,
+                                        fontSize: 20.0,
+                                        fontFamily: 'FuturaPTBool',
+                                      ),
                                     )
-                                  ]),
-                            ]),
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                         RichText(
-                          text: TextSpan(children: <TextSpan>[
-                            TextSpan(
-                              text: "Total",
-                              style: TextStyle(
+                          text: TextSpan(
+                            children: <TextSpan>[
+                              TextSpan(
+                                text: "Total",
+                                style: TextStyle(
                                   color: UniversalVariables.primaryAlabaster,
                                   fontSize: 16.0,
-                                  fontFamily: 'FuturaPTBool'),
-                            ),
-                          ]),
+                                  fontFamily: 'FuturaPTBool',
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),
@@ -146,15 +161,18 @@ class _StatisticsState extends State<Statistics> {
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: RichText(
-                    text: TextSpan(children: <TextSpan>[
-                      TextSpan(
-                        text: "Statistics",
-                        style: TextStyle(
+                    text: TextSpan(
+                      children: <TextSpan>[
+                        TextSpan(
+                          text: "Statistics",
+                          style: TextStyle(
                             color: UniversalVariables.primaryEbony,
                             fontSize: 16.0,
-                            fontFamily: 'FuturaPTBool'),
-                      ),
-                    ]),
+                            fontFamily: 'FuturaPTBool',
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -187,15 +205,18 @@ class _StatisticsState extends State<Statistics> {
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: RichText(
-                    text: TextSpan(children: <TextSpan>[
-                      TextSpan(
-                        text: "Recent Statistics",
-                        style: TextStyle(
+                    text: TextSpan(
+                      children: <TextSpan>[
+                        TextSpan(
+                          text: "Recent Statistics",
+                          style: TextStyle(
                             color: UniversalVariables.primaryEbony,
                             fontSize: 16.0,
-                            fontFamily: 'FuturaPTBool'),
-                      ),
-                    ]),
+                            fontFamily: 'FuturaPTBool',
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -251,29 +272,31 @@ class StatsPostsState extends State<StatsPosts> {
     double height = media.height;
     return Container(
       height: height * 0.16,
-      child: Row(children: <Widget>[
-        Expanded(
-          flex: 1,
-          child: Container(
-            width: width * 0.33,
-            color: UniversalVariables.primaryCrimson,
+      child: Row(
+        children: <Widget>[
+          Expanded(
+            flex: 1,
+            child: Container(
+              width: width * 0.33,
+              color: UniversalVariables.primaryCrimson,
+            ),
           ),
-        ),
-        Expanded(
-          flex: 1,
-          child: Container(
-            width: width * 0.33,
-            color: UniversalVariables.primaryAlabaster,
+          Expanded(
+            flex: 1,
+            child: Container(
+              width: width * 0.33,
+              color: UniversalVariables.primaryAlabaster,
+            ),
           ),
-        ),
-        Expanded(
-          flex: 1,
-          child: Container(
-            width: width * 0.33,
-            color: UniversalVariables.primaryEbony,
-          ),
-        )
-      ]),
+          Expanded(
+            flex: 1,
+            child: Container(
+              width: width * 0.33,
+              color: UniversalVariables.primaryEbony,
+            ),
+          )
+        ],
+      ),
     );
   }
 }

@@ -16,10 +16,10 @@ dependencies:
   cupertino_icons: ^0.1.3
 
   # for svg icons
-  flutter_svg: ^0.17.4
+  flutter_svg: ^0.22.0
 
   # for share via
-  share: ^0.6.4+2
+  share: ^2.0.4
 
 dev_dependencies:
   flutter_test:

@@ -53,46 +53,48 @@ class _DashBoardState extends State<DashBoard>
           Container(
             width: width * 0.16,
             decoration: BoxDecoration(
-                color: UniversalVariables.primaryAlabaster,
-                boxShadow: [
-                  BoxShadow(
-                      color: UniversalVariables.primaryEbonyShadow,
-                      offset: new Offset(1.0, 0.0),
-                      blurRadius: 4.0),
-                ]),
+              color: UniversalVariables.primaryAlabaster,
+              boxShadow: [
+                BoxShadow(
+                    color: UniversalVariables.primaryEbonyShadow,
+                    offset: new Offset(1.0, 0.0),
+                    blurRadius: 4.0),
+              ],
+            ),
             child: Column(
               children: <Widget>[
                 Expanded(
-                    flex: 4,
-                    child: Column(
-                      children: <Widget>[
-                        Padding(
-                          padding: EdgeInsets.only(
-                            left: 0.0,
-                            top: height * 0.08,
-                            right: 0.0,
-                            bottom: 0.0,
-                          ),
-                          child: Container(
-                            width: width * 0.10,
-                            height: width * 0.10,
-                            decoration: new BoxDecoration(
-                                color: UniversalVariables.primaryAlabaster,
-                                borderRadius: BorderRadius.circular(32.0),
-                                boxShadow: [
-                                  new BoxShadow(
-                                      color: UniversalVariables
-                                          .primaryCrimsonShadow,
-                                      offset: new Offset(0.0, 1.0),
-                                      blurRadius: 8.0)
-                                ]),
-                            child:
-                                SvgPicture.asset('assets/svgs/AakCupChaa.svg'),
-                          ),
+                  flex: 4,
+                  child: Column(
+                    children: <Widget>[
+                      Padding(
+                        padding: EdgeInsets.only(
+                          left: 0.0,
+                          top: height * 0.08,
+                          right: 0.0,
+                          bottom: 0.0,
                         ),
-                        // SvgPicture.asset('assets/svgs/AakCupChaa.svg'),
-                        RichText(
-                          text: TextSpan(children: <TextSpan>[
+                        child: Container(
+                          width: width * 0.10,
+                          height: width * 0.10,
+                          decoration: new BoxDecoration(
+                            color: UniversalVariables.primaryAlabaster,
+                            borderRadius: BorderRadius.circular(32.0),
+                            boxShadow: [
+                              new BoxShadow(
+                                  color:
+                                      UniversalVariables.primaryCrimsonShadow,
+                                  offset: new Offset(0.0, 1.0),
+                                  blurRadius: 8.0)
+                            ],
+                          ),
+                          child: SvgPicture.asset('assets/svgs/AakCupChaa.svg'),
+                        ),
+                      ),
+                      // SvgPicture.asset('assets/svgs/AakCupChaa.svg'),
+                      RichText(
+                        text: TextSpan(
+                          children: <TextSpan>[
                             TextSpan(
                               text: 'Taki',
                               style: TextStyle(
@@ -100,41 +102,42 @@ class _DashBoardState extends State<DashBoard>
                                   fontSize: 18.0,
                                   fontFamily: 'FuturaPTMedium'),
                             ),
-                          ]),
+                          ],
                         ),
-                        GestureDetector(
-                          onTap: () {
-                            setState(() {
-                              Share.share(
-                                  'https://www.buymeacoffee.com/takiuddin93');
-                            });
-                          },
-                          child: Container(
-                            width: width * 0.16,
-                            child: SvgPicture.asset(
-                              'assets/svgs/Link.svg',
-                            ),
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            Share.share(
+                                'https://www.buymeacoffee.com/takiuddin93');
+                          });
+                        },
+                        child: Container(
+                          width: width * 0.16,
+                          child: SvgPicture.asset(
+                            'assets/svgs/Link.svg',
                           ),
                         ),
-                        IconButton(
-                          color: UniversalVariables.primaryCrimson,
-                          icon: new Icon(
-                            Icons.notifications,
-                            size: 32.0,
-                          ),
-                          onPressed: () {
-                            CustomDialog.showScaleAlertBox(
-                              context: context,
-                              title: _alertdialogTitle,
-                              icon:
-                                  Icons.info_outline, // IF YOU WANT TO ADD ICON
-                              text: _alertdialogText, // IF YOU WANT TO ADD
-                              firstButton: _alertdialogFirstButton,
-                            );
-                          },
+                      ),
+                      IconButton(
+                        color: UniversalVariables.primaryCrimson,
+                        icon: new Icon(
+                          Icons.notifications,
+                          size: 32.0,
                         ),
-                      ],
-                    )),
+                        onPressed: () {
+                          CustomDialog.showScaleAlertBox(
+                            context: context,
+                            title: _alertdialogTitle,
+                            icon: Icons.info_outline, // IF YOU WANT TO ADD ICON
+                            text: _alertdialogText, // IF YOU WANT TO ADD
+                            firstButton: _alertdialogFirstButton,
+                          );
+                        },
+                      ),
+                    ],
+                  ),
+                ),
                 Expanded(
                   flex: 3,
                   child: Container(),
@@ -162,42 +165,42 @@ class _DashBoardState extends State<DashBoard>
                         ),
                       ),
                       Expanded(
-                          flex: 1,
-                          child: GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                selectedMenuMarker = MenuMarker.stats;
-                              });
-                            },
-                            child: Container(
-                              width: width * 0.16,
-                              child: SvgPicture.asset('assets/svgs/Stats.svg',
-                                  width: width * 0.08,
-                                  color:
-                                      (selectedMenuMarker == MenuMarker.stats)
-                                          ? UniversalVariables.primaryCrimson
-                                          : UniversalVariables.primaryRiverBed),
-                            ),
-                          )),
+                        flex: 1,
+                        child: GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              selectedMenuMarker = MenuMarker.stats;
+                            });
+                          },
+                          child: Container(
+                            width: width * 0.16,
+                            child: SvgPicture.asset('assets/svgs/Stats.svg',
+                                width: width * 0.08,
+                                color: (selectedMenuMarker == MenuMarker.stats)
+                                    ? UniversalVariables.primaryCrimson
+                                    : UniversalVariables.primaryRiverBed),
+                          ),
+                        ),
+                      ),
                       Expanded(
-                          flex: 1,
-                          child: GestureDetector(
-                            onTap: () {
-                              setState(() {
-                                selectedMenuMarker = MenuMarker.settings;
-                              });
-                            },
-                            child: Container(
-                              width: width * 0.16,
-                              child: SvgPicture.asset(
-                                  'assets/svgs/Settings.svg',
-                                  width: width * 0.08,
-                                  color: (selectedMenuMarker ==
-                                          MenuMarker.settings)
-                                      ? UniversalVariables.primaryCrimson
-                                      : UniversalVariables.primaryRiverBed),
-                            ),
-                          )),
+                        flex: 1,
+                        child: GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              selectedMenuMarker = MenuMarker.settings;
+                            });
+                          },
+                          child: Container(
+                            width: width * 0.16,
+                            child: SvgPicture.asset('assets/svgs/Settings.svg',
+                                width: width * 0.08,
+                                color:
+                                    (selectedMenuMarker == MenuMarker.settings)
+                                        ? UniversalVariables.primaryCrimson
+                                        : UniversalVariables.primaryRiverBed),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),

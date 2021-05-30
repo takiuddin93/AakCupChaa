@@ -29,25 +29,29 @@ class _MySearchState extends State<Search> {
                 horizontal: 0.0,
               ),
               decoration: BoxDecoration(
-                  color: UniversalVariables.primaryCrimson,
-                  shape: BoxShape.rectangle,
-                  boxShadow: [
-                    BoxShadow(
-                        color: UniversalVariables.primaryEbony,
-                        offset: Offset(0.0, 1.0),
-                        blurRadius: 4.0)
-                  ]),
+                color: UniversalVariables.primaryCrimson,
+                shape: BoxShape.rectangle,
+                boxShadow: [
+                  BoxShadow(
+                      color: UniversalVariables.primaryEbony,
+                      offset: Offset(0.0, 1.0),
+                      blurRadius: 4.0)
+                ],
+              ),
               child: PreferredSize(
                 child: MainAppBar(back: "search", title: "Search"),
-                preferredSize: Size.fromHeight(media.height),
+                preferredSize: Size.fromHeight(
+                  media.height,
+                ),
               ),
             ),
           ),
           Positioned(
-              top: media.height * 0.45,
-              left: media.width * 0.20,
-              right: media.width * 0.20,
-              child: SvgPicture.asset('assets/svgs/BarrenClipBoard.svg')),
+            top: media.height * 0.45,
+            left: media.width * 0.20,
+            right: media.width * 0.20,
+            child: SvgPicture.asset('assets/svgs/BarrenClipBoard.svg'),
+          ),
         ],
       ),
     );

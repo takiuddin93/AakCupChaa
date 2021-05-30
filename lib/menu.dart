@@ -31,16 +31,21 @@ class _MenuState extends State<Menu> {
                 horizontal: 0.0,
               ),
               decoration: BoxDecoration(
-                  color: UniversalVariables.primaryCrimson,
-                  shape: BoxShape.rectangle,
-                  boxShadow: [
-                    BoxShadow(
-                        color: UniversalVariables.primaryEbony,
-                        offset: Offset(0.0, 1.0),
-                        blurRadius: 4.0)
-                  ]),
+                color: UniversalVariables.primaryCrimson,
+                shape: BoxShape.rectangle,
+                boxShadow: [
+                  BoxShadow(
+                    color: UniversalVariables.primaryEbony,
+                    offset: Offset(0.0, 1.0),
+                    blurRadius: 4.0,
+                  )
+                ],
+              ),
               child: PreferredSize(
-                child: MainAppBar(back: "menu", title: "Recent Feeds"),
+                child: MainAppBar(
+                  back: "menu",
+                  title: "Recent Feeds",
+                ),
                 preferredSize: Size.fromHeight(media.height),
               ),
             ),
@@ -100,15 +105,18 @@ class _FeedPostsState extends State<FeedPosts> {
                     child: Align(
                       alignment: Alignment.center,
                       child: RichText(
-                        text: TextSpan(children: <TextSpan>[
-                          TextSpan(
-                            text: "Why so barren?",
-                            style: TextStyle(
+                        text: TextSpan(
+                          children: <TextSpan>[
+                            TextSpan(
+                              text: "Why so barren?",
+                              style: TextStyle(
                                 color: UniversalVariables.primaryCrimson,
                                 fontSize: 18.0,
-                                fontFamily: 'FuturaPTMedium'),
-                          ),
-                        ]),
+                                fontFamily: 'FuturaPTMedium',
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),
@@ -125,25 +133,28 @@ class _FeedPostsState extends State<FeedPosts> {
                           color: UniversalVariables.primaryCrimson,
                           borderRadius: BorderRadius.circular(2.0)),
                       child: FlatButton(
-                          onPressed: () {
-                            Navigator.pushAndRemoveUntil(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => Search()),
-                                (Route<dynamic> route) => false);
-                            print("Explore creators");
-                          },
-                          child: RichText(
-                            text: TextSpan(children: <TextSpan>[
+                        onPressed: () {
+                          Navigator.pushAndRemoveUntil(
+                              context,
+                              MaterialPageRoute(builder: (context) => Search()),
+                              (Route<dynamic> route) => false);
+                          print("Explore creators");
+                        },
+                        child: RichText(
+                          text: TextSpan(
+                            children: <TextSpan>[
                               TextSpan(
                                 text: "Explore creators",
                                 style: TextStyle(
-                                    color: UniversalVariables.primaryAlabaster,
-                                    fontSize: 18.0,
-                                    fontFamily: 'FuturaPTHeavy'),
+                                  color: UniversalVariables.primaryAlabaster,
+                                  fontSize: 18.0,
+                                  fontFamily: 'FuturaPTHeavy',
+                                ),
                               ),
-                            ]),
-                          )),
+                            ],
+                          ),
+                        ),
+                      ),
                     ),
                   )
                 ],

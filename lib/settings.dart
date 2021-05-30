@@ -15,9 +15,10 @@ class _SettingsState extends State<Settings> {
           TextSpan(
             text: "Settings",
             style: TextStyle(
-                color: UniversalVariables.primaryCrimson,
-                fontSize: 18.0,
-                fontFamily: 'FuturaPTBold'),
+              color: UniversalVariables.primaryCrimson,
+              fontSize: 18.0,
+              fontFamily: 'FuturaPTBold',
+            ),
           ),
         ]),
       ),

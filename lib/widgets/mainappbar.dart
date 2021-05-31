@@ -59,6 +59,11 @@ class MainAppBar extends StatelessWidget {
           _iconData = Icons.arrow_back;
         }
         break;
+      case "settings":
+        {
+          _iconData = null;
+        }
+        break;
       default:
         {
           Navigator.pop(context);

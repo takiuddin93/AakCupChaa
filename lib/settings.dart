@@ -19,6 +19,7 @@ class _SettingsState extends State<Settings> {
     return Center(
       child: Stack(
         children: <Widget>[
+          // Top Bar
           Positioned(
             child: Container(
               width: width,
@@ -47,6 +48,7 @@ class _SettingsState extends State<Settings> {
               ),
             ),
           ),
+          // Settings
           Positioned(
             child: Center(
               child: Container(

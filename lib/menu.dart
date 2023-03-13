@@ -132,7 +132,7 @@ class _FeedPostsState extends State<FeedPosts> {
                       decoration: BoxDecoration(
                           color: UniversalVariables.primaryCrimson,
                           borderRadius: BorderRadius.circular(2.0)),
-                      child: FlatButton(
+                      child: TextButton(
                         onPressed: () {
                           Navigator.pushAndRemoveUntil(
                               context,

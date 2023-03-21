@@ -3,12 +3,12 @@ import 'package:flutter/widgets.dart';
 import 'package:aakcupchaa/utils/universal_variables.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class CustomPosts extends StatelessWidget {
+class CustomStatistics extends StatelessWidget {
   final String title;
   final String subtitle;
   final String author;
 
-  CustomPosts({
+  CustomStatistics({
     @required this.title,
     @required this.subtitle,
     @required this.author,

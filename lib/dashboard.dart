@@ -32,6 +32,7 @@ class _DashBoardState extends State<DashBoard>
     return Scaffold(
       body: Stack(
         children: <Widget>[
+          //Dashboard
           Container(
             width: width * 1.0,
             color: UniversalVariables.primaryAlabaster,
@@ -50,6 +51,7 @@ class _DashBoardState extends State<DashBoard>
               ),
             ),
           ),
+          //Navigation
           Container(
             width: width * 0.16,
             decoration: BoxDecoration(

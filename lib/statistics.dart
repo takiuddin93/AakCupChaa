@@ -65,6 +65,7 @@ class _StatisticsState extends State<Statistics> {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
+                      // Today
                       Container(
                         margin: EdgeInsets.only(
                           left: width * 0.032,
@@ -148,6 +149,7 @@ class _StatisticsState extends State<Statistics> {
                           ],
                         ),
                       ),
+                      // Last 7 days
                       Container(
                         margin: EdgeInsets.only(
                           left: width * 0.032,

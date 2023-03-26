@@ -19,44 +19,40 @@ class _MenuState extends State<Menu> {
     Size media = MediaQuery.of(context).size;
     double width = media.width;
     double height = media.height;
-    return Center(
-      child: Stack(
+    return Container(
+      height: height,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Positioned(
-            child: Container(
-              width: width,
-              height: height * 0.10,
-              padding: EdgeInsets.symmetric(
-                vertical: height * 0.0,
-                horizontal: 0.0,
+          Container(
+            width: width,
+            height: height * 0.10,
+            padding: EdgeInsets.symmetric(
+              vertical: height * 0.0,
+              horizontal: 0.0,
+            ),
+            decoration: BoxDecoration(
+              color: UniversalVariables.primaryCrimson,
+              shape: BoxShape.rectangle,
+              boxShadow: [
+                BoxShadow(
+                  color: UniversalVariables.primaryEbony,
+                  offset: Offset(0.0, 1.0),
+                  blurRadius: 4.0,
+                )
+              ],
+            ),
+            child: PreferredSize(
+              child: MainAppBar(
+                back: "menu",
+                title: "Recent Feeds",
               ),
-              decoration: BoxDecoration(
-                color: UniversalVariables.primaryCrimson,
-                shape: BoxShape.rectangle,
-                boxShadow: [
-                  BoxShadow(
-                    color: UniversalVariables.primaryEbony,
-                    offset: Offset(0.0, 1.0),
-                    blurRadius: 4.0,
-                  )
-                ],
-              ),
-              child: PreferredSize(
-                child: MainAppBar(
-                  back: "menu",
-                  title: "Recent Feeds",
-                ),
-                preferredSize: Size.fromHeight(media.height),
-              ),
+              preferredSize: Size.fromHeight(media.height),
             ),
           ),
-          Positioned(
-            child: Container(
-              margin: EdgeInsets.only(
-                top: height * 0.10,
-              ),
-              child: FeedPosts(),
-            ),
+          Expanded(
+            child: FeedPosts(),
           ),
         ],
       ),

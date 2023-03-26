@@ -58,135 +58,66 @@ class _StatisticsState extends State<Statistics> {
                 bottom: height * 0.0,
               ),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          Container(
-                            margin: EdgeInsets.only(
-                              left: width * 0.032,
-                              top: height * 0.02,
-                              right: width * 0.032,
-                            ),
-                            padding: EdgeInsets.symmetric(
-                              horizontal: width * 0.02,
-                            ),
-                            height: height * 0.1,
-                            width: (width - (width * 0.30)) / 2,
-                            decoration: BoxDecoration(
-                              color: UniversalVariables.primaryAlabaster,
-                              borderRadius: BorderRadius.circular(12),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: UniversalVariables.primaryGhostShadow,
-                                  blurRadius: 4.0, // soften the shadow
-                                  spreadRadius: 2.0, //extend the shadow
-                                  offset: Offset(
-                                    0.0, // Move to right 10  horizontally
-                                    2.0, // Move to bottom 10 Vertically
+                      Container(
+                        margin: EdgeInsets.only(
+                          left: width * 0.032,
+                          top: height * 0.02,
+                          right: width * 0.032,
+                        ),
+                        padding: EdgeInsets.symmetric(
+                          horizontal: width * 0.02,
+                        ),
+                        height: height * 0.1,
+                        width: (width - (width * 0.30)) / 2,
+                        decoration: BoxDecoration(
+                          color: UniversalVariables.primaryAlabaster,
+                          borderRadius: BorderRadius.circular(12),
+                          boxShadow: [
+                            BoxShadow(
+                              color: UniversalVariables.primaryGhostShadow,
+                              blurRadius: 4.0, // soften the shadow
+                              spreadRadius: 2.0, //extend the shadow
+                              offset: Offset(
+                                0.0, // Move to right 10  horizontally
+                                2.0, // Move to bottom 10 Vertically
+                              ),
+                            )
+                          ],
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            RichText(
+                              text: TextSpan(
+                                children: <TextSpan>[
+                                  TextSpan(
+                                    text: "Today",
+                                    style: TextStyle(
+                                      color: UniversalVariables.primaryEbony,
+                                      fontSize: 14.0,
+                                      fontFamily: 'FuturaPTMedium',
+                                    ),
                                   ),
-                                )
-                              ],
+                                ],
+                              ),
                             ),
-                            child: Column(
+                            Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: <Widget>[
                                 RichText(
                                   text: TextSpan(
                                     children: <TextSpan>[
                                       TextSpan(
-                                        text: "Today",
-                                        style: TextStyle(
-                                          color:
-                                              UniversalVariables.primaryEbony,
-                                          fontSize: 14.0,
-                                          fontFamily: 'FuturaPTMedium',
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: <Widget>[
-                                    RichText(
-                                      text: TextSpan(
-                                        children: <TextSpan>[
-                                          TextSpan(
-                                            text: "Earnings",
-                                            style: TextStyle(
-                                              color: UniversalVariables
-                                                  .primaryEbony,
-                                              fontSize: 12.0,
-                                              fontFamily: 'FuturaPTMedium',
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    RichText(
-                                      text: TextSpan(
-                                        children: <TextSpan>[
-                                          TextSpan(
-                                            text: "Views",
-                                            style: TextStyle(
-                                              color: UniversalVariables
-                                                  .primaryEbony,
-                                              fontSize: 12.0,
-                                              fontFamily: 'FuturaPTMedium',
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.only(
-                              left: width * 0.032,
-                              top: height * 0.02,
-                              right: width * 0.032,
-                            ),
-                            padding: EdgeInsets.symmetric(
-                              horizontal: width * 0.02,
-                            ),
-                            height: height * 0.1,
-                            width: (width - (width * 0.30)) / 2,
-                            decoration: BoxDecoration(
-                              color: UniversalVariables.primaryAlabaster,
-                              borderRadius: BorderRadius.circular(12),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: UniversalVariables.primaryGhostShadow,
-                                  blurRadius: 4.0, // soften the shadow
-                                  spreadRadius: 2.0, //extend the shadow
-                                  offset: Offset(
-                                    0.0, // Move to right 10  horizontally
-                                    2.0, // Move to bottom 10 Vertically
-                                  ),
-                                )
-                              ],
-                            ),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: <Widget>[
-                                RichText(
-                                  text: TextSpan(
-                                    children: <TextSpan>[
-                                      TextSpan(
-                                        text: "Last 7 Days",
+                                        text: "Earnings",
                                         style: TextStyle(
                                           color:
                                               UniversalVariables.primaryEbony,
@@ -197,47 +128,108 @@ class _StatisticsState extends State<Statistics> {
                                     ],
                                   ),
                                 ),
-                                Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: <Widget>[
-                                    RichText(
-                                      text: TextSpan(
-                                        children: <TextSpan>[
-                                          TextSpan(
-                                            text: "Earnings",
-                                            style: TextStyle(
-                                              color: UniversalVariables
-                                                  .primaryEbony,
-                                              fontSize: 12.0,
-                                              fontFamily: 'FuturaPTMedium',
-                                            ),
-                                          ),
-                                        ],
+                                RichText(
+                                  text: TextSpan(
+                                    children: <TextSpan>[
+                                      TextSpan(
+                                        text: "Views",
+                                        style: TextStyle(
+                                          color:
+                                              UniversalVariables.primaryEbony,
+                                          fontSize: 12.0,
+                                          fontFamily: 'FuturaPTMedium',
+                                        ),
                                       ),
-                                    ),
-                                    RichText(
-                                      text: TextSpan(
-                                        children: <TextSpan>[
-                                          TextSpan(
-                                            text: "Views",
-                                            style: TextStyle(
-                                              color: UniversalVariables
-                                                  .primaryEbony,
-                                              fontSize: 12.0,
-                                              fontFamily: 'FuturaPTMedium',
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
                               ],
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.only(
+                          left: width * 0.032,
+                          top: height * 0.02,
+                          right: width * 0.032,
+                        ),
+                        padding: EdgeInsets.symmetric(
+                          horizontal: width * 0.02,
+                        ),
+                        height: height * 0.1,
+                        width: (width - (width * 0.30)) / 2,
+                        decoration: BoxDecoration(
+                          color: UniversalVariables.primaryAlabaster,
+                          borderRadius: BorderRadius.circular(12),
+                          boxShadow: [
+                            BoxShadow(
+                              color: UniversalVariables.primaryGhostShadow,
+                              blurRadius: 4.0, // soften the shadow
+                              spreadRadius: 2.0, //extend the shadow
+                              offset: Offset(
+                                0.0, // Move to right 10  horizontally
+                                2.0, // Move to bottom 10 Vertically
+                              ),
+                            )
+                          ],
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            RichText(
+                              text: TextSpan(
+                                children: <TextSpan>[
+                                  TextSpan(
+                                    text: "Last 7 Days",
+                                    style: TextStyle(
+                                      color: UniversalVariables.primaryEbony,
+                                      fontSize: 12.0,
+                                      fontFamily: 'FuturaPTMedium',
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: <Widget>[
+                                RichText(
+                                  text: TextSpan(
+                                    children: <TextSpan>[
+                                      TextSpan(
+                                        text: "Earnings",
+                                        style: TextStyle(
+                                          color:
+                                              UniversalVariables.primaryEbony,
+                                          fontSize: 12.0,
+                                          fontFamily: 'FuturaPTMedium',
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                RichText(
+                                  text: TextSpan(
+                                    children: <TextSpan>[
+                                      TextSpan(
+                                        text: "Views",
+                                        style: TextStyle(
+                                          color:
+                                              UniversalVariables.primaryEbony,
+                                          fontSize: 12.0,
+                                          fontFamily: 'FuturaPTMedium',
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),

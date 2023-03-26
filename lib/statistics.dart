@@ -235,6 +235,7 @@ class _StatisticsState extends State<Statistics> {
                       ),
                     ],
                   ),
+                  // Recent Stats
                   Container(
                     margin: EdgeInsets.only(
                       left: width * 0.032,
@@ -276,42 +277,32 @@ class _StatisticsState extends State<Statistics> {
                     decoration: BoxDecoration(
                       color: UniversalVariables.primaryCrimson,
                     ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        FutureBuilder(
-                          builder: (context, snapshot) {
-                            if (snapshot.hasData) {
-                              var showData =
-                                  json.decode(snapshot.data.toString());
-                              if (showData['noofposts'] != "0") {
-                                return ListView.builder(
-                                  itemCount: showData.length,
-                                  itemBuilder:
-                                      (BuildContext context, int index) {
-                                    print("Data Count: " + index.toString());
-                                    return CustomStatistics(
-                                      title: showData['posts'][index]['pTitle'],
-                                      subtitle: showData['posts'][index]
-                                          ['pContent'],
-                                      author: showData['posts'][index]
-                                          ['pAuthor'],
-                                    );
-                                  },
+                    child: FutureBuilder(
+                      builder: (context, snapshot) {
+                        if (snapshot.hasData) {
+                          var showData = json.decode(snapshot.data.toString());
+                          if (showData['noofposts'] != "0") {
+                            return ListView.builder(
+                              itemCount: showData.length,
+                              itemBuilder: (BuildContext context, int index) {
+                                print("Data Count: " + index.toString());
+                                return CustomStatistics(
+                                  title: showData['posts'][index]['pTitle'],
+                                  subtitle: showData['posts'][index]
+                                      ['pContent'],
+                                  author: showData['posts'][index]['pAuthor'],
                                 );
-                              } else {
-                                return Center(
-                                    child: CircularProgressIndicator());
-                              }
-                            } else {
-                              return Center(child: CircularProgressIndicator());
-                            }
-                          },
-                          future: DefaultAssetBundle.of(context)
-                              .loadString("assets/json/posts.json"),
-                        ),
-                      ],
+                              },
+                            );
+                          } else {
+                            return Center(child: CircularProgressIndicator());
+                          }
+                        } else {
+                          return Center(child: CircularProgressIndicator());
+                        }
+                      },
+                      future: DefaultAssetBundle.of(context)
+                          .loadString("assets/json/posts.json"),
                     ),
                   ),
                 ],

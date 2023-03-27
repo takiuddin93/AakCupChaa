@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:aakcupchaa/screens/dashboard.dart';
+import 'package:aakcupchaa/screens/login_signup/login_signup.dart';
 import 'package:flutter/material.dart';
 import 'package:aakcupchaa/utils/universal_variables.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -116,7 +117,9 @@ class _SplashScreenState extends State<SplashScreen> {
   route() {
     Navigator.pushAndRemoveUntil(
         context,
-        MaterialPageRoute(builder: (context) => DashBoard()),
+        MaterialPageRoute(
+          builder: (context) => LoginSignup(),
+        ),
         (Route<dynamic> route) => false);
   }
 }

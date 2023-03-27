@@ -310,7 +310,7 @@ class _StatisticsPostsState extends State<StatisticsPosts> {
           }
         },
         future:
-            DefaultAssetBundle.of(context).loadString("assets/json/posts.json"),
+            DefaultAssetBundle.of(context).loadString("assets/json/posts_test.json"),
       ),
     );
   }

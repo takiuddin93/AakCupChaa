@@ -1,4 +1,4 @@
-import 'package:aakcupchaa/dashboard.dart';
+import 'package:aakcupchaa/screens/dashboard.dart';
 import 'package:aakcupchaa/utils/universal_variables.dart';
 import 'package:aakcupchaa/utils/mainappbar_style.dart';
 import 'package:aakcupchaa/widgets/custom_notification_dialog_widget.dart';

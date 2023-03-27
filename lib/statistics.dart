@@ -295,10 +295,18 @@ class _StatisticsPostsState extends State<StatisticsPosts> {
                 },
               );
             } else {
-              return Center(child: CircularProgressIndicator());
+              return Center(
+                child: CircularProgressIndicator(
+                  color: UniversalVariables.primaryCrimson,
+                ),
+              );
             }
           } else {
-            return Center(child: CircularProgressIndicator());
+            return Center(
+              child: CircularProgressIndicator(
+                color: UniversalVariables.primaryCrimson,
+              ),
+            );
           }
         },
         future:

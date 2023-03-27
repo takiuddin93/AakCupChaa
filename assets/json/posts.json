@@ -1,6 +1,7 @@
 {
   "noofposts": "6",
-  "posts": [{
+  "posts": [
+    {
       "pID": "0001",
       "photoThumbnail": "assets/images/postsThumbnails.jpg",
       "videoThumbnail": null,

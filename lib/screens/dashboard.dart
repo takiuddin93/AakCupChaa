@@ -4,7 +4,7 @@ import 'package:aakcupchaa/utils/universal_variables.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:aakcupchaa/screens/menu/menu.dart';
-import 'package:aakcupchaa/statistics.dart';
+import 'package:aakcupchaa/screens/statistics/statistics.dart';
 import 'package:aakcupchaa/settings.dart';
 
 enum MenuMarker { menu, stats, settings }

@@ -78,7 +78,7 @@ class _FeedPostsState extends State<FeedPosts> {
             var showData = json.decode(snapshot.data.toString());
             if (showData['noofposts'] != "0") {
               return ListView.builder(
-                itemCount: showData.length,
+                itemCount: showData['posts'].length,
                 itemBuilder: (BuildContext context, int index) {
                   print("Data Count: " + index.toString());
                   return CustomPosts(

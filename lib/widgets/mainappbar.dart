@@ -6,7 +6,8 @@ import 'package:flutter/material.dart';
 class MainAppBar extends StatelessWidget {
   final String title, back;
 
-  const MainAppBar({Key key, this.title, this.back}) : super(key: key);
+  const MainAppBar({Key? key, required this.title, required this.back})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +47,7 @@ class MainAppBar extends StatelessWidget {
   }
 
   Builder _buildleading(BuildContext context) {
-    IconData _iconData;
+    late IconData? _iconData;
     switch (back.toString()) {
       case "menu":
         {

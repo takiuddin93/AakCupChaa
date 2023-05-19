@@ -9,9 +9,9 @@ class CustomStatistics extends StatelessWidget {
   final String author;
 
   CustomStatistics({
-    @required this.title,
-    @required this.subtitle,
-    @required this.author,
+    required this.title,
+    required this.subtitle,
+    required this.author,
   });
 
   @override

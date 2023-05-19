@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class LoginSignup extends StatefulWidget {
-  const LoginSignup({Key key}) : super(key: key);
+  const LoginSignup({Key? key}) : super(key: key);
 
   @override
   State<LoginSignup> createState() => _LoginSignupState();

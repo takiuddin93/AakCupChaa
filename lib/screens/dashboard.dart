@@ -9,7 +9,7 @@ import 'package:aakcupchaa/settings.dart';
 enum MenuMarker { menu, stats, settings }
 
 class DashBoard extends StatefulWidget {
-  DashBoard({Key key}) : super(key: key);
+  DashBoard({Key? key}) : super(key: key);
 
   @override
   _DashBoardState createState() => _DashBoardState();

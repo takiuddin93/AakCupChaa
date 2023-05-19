@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:aakcupchaa/utils/universal_variables.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-bool hasPosts;
+late bool hasPosts;
 
 class Menu extends StatefulWidget {
   @override

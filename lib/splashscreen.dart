@@ -5,14 +5,14 @@ import 'package:aakcupchaa/utils/universal_variables.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class SplashScreen extends StatefulWidget {
-  SplashScreen({Key key}) : super(key: key);
+  SplashScreen({Key? key}) : super(key: key);
 
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  Timer _timer;
+  late Timer _timer;
 
   _SplashScreenState() {
     _timer = new Timer(const Duration(milliseconds: 1500), () {

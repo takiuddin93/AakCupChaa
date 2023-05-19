@@ -9,9 +9,9 @@ class CustomPosts extends StatelessWidget {
   final String author;
 
   CustomPosts({
-    @required this.title,
-    @required this.subtitle,
-    @required this.author,
+    required this.title,
+    required this.subtitle,
+    required this.author,
   });
 
   @override

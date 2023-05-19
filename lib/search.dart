@@ -4,7 +4,7 @@ import 'package:aakcupchaa/utils/universal_variables.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Search extends StatefulWidget {
-  Search({Key key}) : super(key: key);
+  Search({Key? key}) : super(key: key);
 
   @override
   _MySearchState createState() => _MySearchState();

@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 
 class CustomDialog {
   static Future showScaleAlertBox({
-    @required BuildContext context,
-    @required String title,
-    IconData icon,
-    @required String text,
-    @required String firstButton,
+    required BuildContext context,
+    required String title,
+    IconData? icon,
+    required String text,
+    required String firstButton,
   }) {
     return showGeneralDialog(
         barrierColor: Colors.black.withOpacity(0.7),
@@ -57,7 +57,7 @@ class CustomDialog {
         barrierLabel: '',
         context: context,
         pageBuilder: (context, animation1, animation2) {
-          return null;
+          return SizedBox();
         });
   }
 }

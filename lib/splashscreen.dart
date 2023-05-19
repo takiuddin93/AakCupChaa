@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'package:aakcupchaa/screens/dashboard.dart';
 import 'package:aakcupchaa/screens/login_signup/login_signup.dart';
 import 'package:flutter/material.dart';
 import 'package:aakcupchaa/utils/universal_variables.dart';

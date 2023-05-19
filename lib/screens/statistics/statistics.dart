@@ -1,10 +1,8 @@
 import 'dart:convert';
 import 'package:aakcupchaa/screens/statistics/widgets/custom_statistics_widget.dart';
 import 'package:aakcupchaa/widgets/mainappbar.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:aakcupchaa/utils/universal_variables.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class Statistics extends StatefulWidget {
   @override
@@ -274,9 +272,9 @@ class StatisticsPosts extends StatefulWidget {
 class _StatisticsPostsState extends State<StatisticsPosts> {
   @override
   Widget build(BuildContext context) {
-    Size media = MediaQuery.of(context).size;
-    double width = media.width;
-    double height = media.height;
+    // Size media = MediaQuery.of(context).size;
+    // double width = media.width;
+    // double height = media.height;
     return Container(
       child: FutureBuilder(
         builder: (context, snapshot) {
@@ -309,8 +307,8 @@ class _StatisticsPostsState extends State<StatisticsPosts> {
             );
           }
         },
-        future:
-            DefaultAssetBundle.of(context).loadString("assets/json/posts_test.json"),
+        future: DefaultAssetBundle.of(context)
+            .loadString("assets/json/posts_test.json"),
       ),
     );
   }
